@@ -10,18 +10,21 @@
 				font-family: roboto;
 				font-size: 12px;
 			}
+			*{
+				border:1px solid red !important;
+			}
 
 			#container
 			{
 				margin-right:auto; /*center container with margins left & right set to auto*/
 				margin-left:auto;
-				width:960px;	/*to center an element it must have a fixed width*/
+				width:600px;
+				height:400px;	/*to center an element it must have a fixed width*/
 				background-color:#AA4639;
 				border-radius: 10px;
 				padding: 10px;
 				font-size: 0;	/* remove inline-block spacing*/
 				position: relative;
-				top:75px;
 			}
 			.box{
 				display: inline-block;
@@ -32,25 +35,29 @@
 				margin:10px;
 				border-radius:10px;
 				font-size: 35px;
-				position:relative;
+				position:absolute;
+				
 			}
 
 			#box1{
-				position: relative;
-				top:150px;
+				
+				top:0px;
+				left:0px;
 			}
 			#box2{
-				position: relative;
-				top:75px;
+				
+				top:0px;
+				left: 380px;
 			}
 			
 			#box3{
-				position: relative;
-				top:0px;
+				
+				top:250px;
+				left:0px;
 			}
 			#box4{
-				position:relative;
-				top:-75px;
+				top:250px;
+				left:380px;
 			}
 
 		</style>
