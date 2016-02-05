@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
 	<head>
@@ -11,53 +10,56 @@
 			{
 				margin-right:auto; /*center container with margins left & right set to auto*/
 				margin-left:auto;
-				width:960px;	/*to center an element it must have a width*/
+				width:960px;	/*to center an element it must have a fixed width*/
 				border-radius: 10px;
 				padding: 10px;
-				font-size: 0; /* for inline-block spacing issues*/
+				font-size: 0; /* font-size:0 removes problem spaceing issue for inline-block*/
 			}
 			.box{
-				position: relative;		/*Must be relative*/
+				position: relative;
 				width: 100%;
 				background-color: #81BBC9;
-				margin-bottom: 10px;
 				border-radius: 10px;
 				font-family: Roboto;
-				font-size: 20px;
+				font-size: 20px;  /* important to declare font-size here, otherwise will be 0*/
 				text-align: center;
 				padding: 30px 0;
+				margin-bottom: 10px;
 			}
 			#sidebar{
 				box-sizing:border-box;
 				display: inline-block;
-				width:470px;
-				margin-right: 10px;
-				padding-left: 10px;
-				padding-right: 10px;
+				width: 475px;
+				margin-right: 5px;
+				padding-right: 40px;
+				padding-left: 40px;
+				
 			}
-
 			#content{
 				box-sizing:border-box;
 				display: inline-block;
-				width:470px;
-				margin-left: 10px;
-				padding-left: 10px;
-				padding-right: 10px;
-			}
-			#toTopRight{
-				position: absolute; 	/* Absolute Link */
-				bottom:0;				/* Offset however we wish*/
-				right:-80px;
-			}
-			#toTopLeft{
-				position: absolute; 	/* Absolute Link */
-				bottom:0;				/* Offset however we wish*/
-				left:-80px;
-			}
-			p{
-				padding-bottom: 50px;
+				width: 475px;
+				margin-left: 5px;
+				padding-right: 40px;
+				padding-left: 40px;
+				position:relative;
+				
 			}
 
+			p{text-align: left;
+				margin-bottom: 50px;
+			}
+
+			#linkToSide{
+				position:absolute;
+				bottom:0px;
+				left:-80px;
+			}
+			#linkToTop{
+				position: absolute;
+				bottom: 0px;
+				right: -80px
+			}
 
 		</style>
 	</head>
@@ -65,19 +67,15 @@
 		<div id="container">
 
 			<div id="header" class="box"> <h1>Header</h1>
-			</div>
-			<div id="sidebar" class="box">
-				<h2>Sidebar</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p><a href="#" alt="Link to top"><img id="toTopLeft" src="arrow.png"></a>
-
-			</div>
-			<div id="content" class="box">
-				<h2>Content</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p>
-				<a href="#" alt="Link to top"><img id="toTopRight" src="arrow.png"></a>
-			</div>
-			<div id="footer" class="box"><h2>Footer</h2>
+			</div><div id="sidebar" class="box"><h2>Sidebar</h2>
+			<p>alldewefowr ofdoiargioqejg oidhgajrgiahegpae uegfoihgprig eiogqhprgh fhoiwehfi egfkhqrgjq egfohweghiqp uehfqwrgpjqrpg iefiewgpop</p>
+			<p>ekhfqrhgjqr ewhf pewgopwrewopgfhpo poewjgopf	wregpowj	rp pejfpo	weg poewjgopfwejfpojwepofh	wep gheohfiorwhgo ehgwfiowqoifr</p>
+			<img id="linkToSide"src="C:\Users\Ciaran Darcy\Documents\Code_Institute\Projects\positioning-challenges\3-absolute-positioning\img\arrow.png">
+			</div><div id="content" class="box"><h2>Content</h2>
+			<p>lkehfwaf geofhewif ihioefhpwe fhihef phwfp iwehfioewhfoi ihewfo ewhoif hefoihewof hweofgiuefh weofoiweoiho ohewfijg w gfewugf o hfeow </p>
+			<p> ihefiow he owfho  qegrfioewohfi ehfqoif quioe foiq eihfo q oiehqfoifho oiqhefoifho oeiqfhoif hoiefqho qooiqehf foif oqehf hfeoiqh </p>
+			<img id="linkToTop"src="C:\Users\Ciaran Darcy\Documents\Code_Institute\Projects\positioning-challenges\3-absolute-positioning\img\arrow.png">
+			</div><div id="footer" class="box"><h2>Footer</h2>
 			</div>
 
 		</div>
